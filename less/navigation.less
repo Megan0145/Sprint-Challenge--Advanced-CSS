@@ -3,6 +3,13 @@ nav {
     .centerAlignFlexCol();
     width: 100%;
     padding: 1rem;
+    background-color: @nav-bg;
+
+    @media @phone {
+        position: fixed;
+        top: 0;
+        width:100%;
+    }
 
         .navHeader{
             width: 100%;

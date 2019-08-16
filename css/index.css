@@ -170,6 +170,14 @@ nav {
   align-items: center;
   width: 100%;
   padding: 1rem;
+  background-color: #F6F6F6;
+}
+@media (max-width: 500px) {
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
 }
 nav .navHeader {
   width: 100%;
@@ -204,6 +212,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .home {
+    margin-top: 13rem;
+  }
 }
 @media (max-width: 500px) {
   .home .intro img {
