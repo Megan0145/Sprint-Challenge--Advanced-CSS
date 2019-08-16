@@ -12,19 +12,25 @@
 }
 
 //Parametric
-.signMeUpButton(@bgColor, @borderRad, @fontColor){
+.signMeUpButton(@bgColor, @fontColor, @btnWidth, @btnHeight){
     background-color: @bgColor;
-    border-radius: @borderRad;
+    border-radius: 0.5rem;
     color: @fontColor;
-    width: 30%;
+    width: @btnWidth;
     text-align: center;
-    height: 3.5rem;
+    height: @btnHeight;
     font-size: 1.8rem;
-    padding-top: 7px; 
+    padding-top: 0.7rem; 
 
     &:hover {
         background-color: @fontColor;
         color: @bgColor;
         border: 0.5px solid @bgColor;
+    }
+
+    @media @phone {
+        width: calc(@btnWidth*3.3);
+        height: calc(@btnHeight*2);
+        padding-top: 2.6rem;
     }
 }
