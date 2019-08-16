@@ -211,9 +211,15 @@ footer {
 .home {
   margin-top: 13rem;
 }
+.home .intro {
+  max-width: 800px;
+}
+.home .intro img {
+  max-width: 100%;
+}
 @media (max-width: 500px) {
   .home .intro img {
-    width: 100vw;
+    width: 100%;
   }
 }
 .home .intro h2 {
