@@ -173,12 +173,13 @@ nav .navHeader {
   justify-content: center;
 }
 nav .navHeader h1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
+  margin: 1rem 0;
 }
 nav .navLinks {
-  width: 75%;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 nav .navLinks a {
   text-decoration: none;
