@@ -1,4 +1,17 @@
 // Mixins Here
+
+//Flex Mixins
+.centerAlignFlexCol(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.centerJustifyFlexRow {
+    display: flex;
+    justify-content: center;
+}
+
+//Parametric
 .signMeUpButton(@bgColor, @borderRad, @fontColor){
     background-color: @bgColor;
     border-radius: @borderRad;

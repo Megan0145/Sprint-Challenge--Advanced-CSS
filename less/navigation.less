@@ -1,15 +1,12 @@
 // Navigation code here
 nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    .centerAlignFlexCol();
     width: 100%;
     padding: 1rem;
 
         .navHeader{
             width: 100%;
-            display: flex;
-            justify-content: center;
+            .centerJustifyFlexRow();
                 h1 {
                     font-size: 4.5rem;
                     margin: 1rem 0;
@@ -17,8 +14,7 @@ nav {
         }
         .navLinks{
             width: 100%;
-            display: flex;
-            justify-content: center;
+            .centerJustifyFlexRow();
                 a {
                     text-decoration: none;
                     font-size: 1.8rem;
