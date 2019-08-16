@@ -176,9 +176,9 @@ nav .navHeader h1 {
   font-size: 5rem;
 }
 nav .navLinks {
-  width: 100%;
+  width: 75%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 nav .navLinks a {
   text-decoration: none;
