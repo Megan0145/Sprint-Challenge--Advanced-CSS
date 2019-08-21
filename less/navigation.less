@@ -1,1 +1,33 @@
 // Navigation code here
+nav {
+    .centerAlignFlexCol();
+    width: 100%;
+    padding: 1rem;
+    background-color: @nav-bg ;
+    position: fixed;
+    top: 0;
+    width:100%;
+
+
+        .navHeader{
+            width: 100%;
+            .centerJustifyFlexRow();
+                h1 {
+                    font-size: 4.5rem;
+                    margin: 1rem 0;
+                    @media @phone {
+                        font-size:4rem;
+                    }
+                }
+        }
+        .navLinks{
+            width: 100%;
+            .centerJustifyFlexRow();
+                a {
+                    text-decoration: none;
+                    font-size: 1.8rem;
+                    padding: 1rem;
+                    // margin: 0 1rem;
+                }
+        }
+}

@@ -34,13 +34,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites use media queries to cater for different devices. However, their content is still designed in hard coded pixels (or other absolute units) at each breakpoint. Altough it's better than a fixed layout, it still only caters for certain devices when the viewport is at specific width & height.
+
+Responsive websites also use media queries. However, their content is styled using relative units (eg REM, EM, %). This makes for aesthetically pleasing content accross thousands of devices with viewports of varying width & height.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first designs are created with mobile view in mind first, before designing for tablet and desktop view. Min-width breakpoints are used in media queries and increased as the devices viewport increases. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Some designers may set their font-size to 62.5% in the root because this equates to roughly 10px (62.5% of 16px, which is the standard medium-size font accross browsers). This means that they can convert REM units by the power of ten throughout the file, which is handy to calculate.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessors are style sheet languages that extend CSS and are syntactically more efficient to work with. Using them, we can introduce variables, mixins, operations and functions etc to incresae productivity and decrease errors. When we are done, the preprocessing files can be compiled back into vanilla CSS. Examples are LESS and SASS
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I find he ability to nest the styling of children within the overall styling of the parent container a lot more efficient than writing seperate code blocks. I find it difficult to go back to writing vanilla CSS. I also enjoyed learning about parametric mixins. Using color functions to lighten & darken specific colors was pretty cool too.
+
+Understanding the concept of the less watch compiler watching for changes in my less file and compiling them into vanilla CSS in my index.css file was difficult to wrap my head around at first.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
